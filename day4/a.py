@@ -14,7 +14,7 @@ def is_subset(a, b):
     return True
 
 complete_overlappings = 0
-with open("input/04.txt") as file:
+with open("input.txt") as file:
     for line in file:
         line = line.rstrip()
         if matches:= re.search(r'(\d+)-(\d+),(\d+)-(\d+)', line):

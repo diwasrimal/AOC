@@ -4,7 +4,7 @@ def group_badge(group):
             return char
 
 groups = []
-with open("./input/03.txt") as file:
+with open("input.txt") as file:
     group = []
     for rucksack in file:
         rucksack = rucksack.rstrip()

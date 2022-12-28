@@ -1,22 +1,7 @@
-class Directory():
-    def __init__(self, name, size):
-        self.name = name
-        self.size = size
-
-    def __repr__(self):
-        return f"[{self.name}, {self.size}]"
-
-
-# Pops the current directory from stack adding its size to its parent
-# Used in '$ cd ..'
-def pop_dir_stack(dir_stack):
-    popped_dir = dir_stack.pop()
-    stack[-1].size += popped_dir.size
-    return popped_dir
-
+from tools import Directory, pop_dir_stack
 
 # Get the command line usage log
-with open("input/07.txt") as file:
+with open("input.txt") as file:
     commands = file.read().splitlines()
 
 # Root dir initialized with size 0

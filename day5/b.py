@@ -16,7 +16,7 @@ def print_top_of_stacks(stacks):
 
 
 # Split stacks and moves
-with open("input/05.txt") as file:
+with open("input.txt") as file:
     data = file.read().split('\n\n')
     stack_input = data[0]
     moves = data[1]

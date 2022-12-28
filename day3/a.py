@@ -7,7 +7,7 @@
 # represent items in the first compartment, while the second half 
 # of the characters represent items in the second compartment
 
-with open("./input/03.txt") as file:
+with open("input.txt") as file:
     rucksacks = [ rucksack.rstrip() for rucksack in file ] 
 
 # Priority of each item type

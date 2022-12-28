@@ -1,5 +1,5 @@
 elves = []
-with open("input/01.txt") as infile:
+with open("input.txt") as infile:
     elf = []
     for calories in infile:
         if calories == "\n":
